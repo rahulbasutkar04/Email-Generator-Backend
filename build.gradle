@@ -36,3 +36,9 @@ dependencies {
 tasks.named('test', Test) {  // Fix for possible warning
 	useJUnitPlatform()
 }
+
+
+jar {
+	archiveFileName = 'demo-1.jar'
+	destinationDirectory = file("$buildDir/libs")
+}
