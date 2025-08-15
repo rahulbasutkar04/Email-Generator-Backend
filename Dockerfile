@@ -21,7 +21,7 @@ WORKDIR /app
 
 # Copy the built JAR file from the build image
 # Make sure that the JAR file exists in /Email-Generator/build/libs/
-COPY --from=build /Email-Generator/build/libs/demo-1.jar app.jar
+COPY --from=build /Email-Generator/build/libs/Email-Generator-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the application port (if your app uses port 8080)
 EXPOSE 8080

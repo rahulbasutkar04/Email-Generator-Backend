@@ -37,6 +37,13 @@ tasks.named('test', Test) {  // Fix for possible warning
 	useJUnitPlatform()
 }
 
+bootJar {
+	manifest {
+		attributes(
+				'Main-Class': 'com.example.projecone.email.EmailGeneratorApplication'
+		)
+	}
+}
 
 jar {
 	archiveFileName = 'demo-1.jar'
