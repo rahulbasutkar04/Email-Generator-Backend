@@ -45,7 +45,3 @@ bootJar {
 	}
 }
 
-jar {
-	archiveFileName = 'demo-1.jar'
-	destinationDirectory = file("$buildDir/libs")
-}
